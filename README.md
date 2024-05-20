@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+![CleanShot 2024-05-21 at 05 18 58@2x](https://github.com/mahendrjy/data-room/assets/31067376/ac027b5d-c70a-48a7-adea-aba2122e2a75)
+
 ```js
 rootFolder = {
   id: f1,
@@ -74,3 +76,5 @@ react-dnd
 1. Move folder/file to another folder
 2. Update the folderId of the folder/file
 ```
+
+![CleanShot 2024-05-21 at 04 55 33@2x](https://github.com/mahendrjy/data-room/assets/31067376/666010d2-798a-4483-94db-3dbcdf905294)
