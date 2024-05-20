@@ -43,8 +43,8 @@ const useUpload = ({
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files: FileItem[] = Array.from(event.target.files as FileList).map(
-      (file) => ({
-        id: Date.now(),
+      (file, index) => ({
+        id: Date.now() + index,
         name: file.name,
         content: URL.createObjectURL(file),
         folderId: folderStack[folderStack.length - 1].id,
