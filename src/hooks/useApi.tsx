@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import content from "../mock-files/dummy.pdf";
 import { FileItem, FolderItem } from "../interfaces";

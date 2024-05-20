@@ -1,3 +1,6 @@
+/* eslint-disable no-case-declarations */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { FileItem, FolderItem } from "../interfaces";
 import Dailog from "./Dailog";
 

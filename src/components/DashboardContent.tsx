@@ -9,7 +9,7 @@ interface Props {
   files: FileItem[];
   handleFileChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleDailog: (data: { type: string; file: FileItem | FolderItem }) => void;
-  setFolderStack: (item: any) => void;
+  setFolderStack: (item: unknown) => void;
   handleDrop: (type: string, folder: FolderItem) => Promise<void>;
 }
 
@@ -29,7 +29,7 @@ const DashboardContent = (props: Props) => {
       id: folder.id,
       name: folder.name,
     };
-    setFolderStack((prev) => [...prev, openedFolder]);
+    setFolderStack((prev: []) => [...prev, openedFolder]);
   };
 
   return (
