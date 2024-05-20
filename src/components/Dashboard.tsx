@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 import DashboardDailogs from "./DashboardDailogs";
