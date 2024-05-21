@@ -37,11 +37,13 @@ const FolderItem = (props: Props) => {
   const [{ isOver }, drop] = useDrop(
     () => ({
       accept: DragTypes.FILE,
-      drop: (args: { type: string; file: FolderItemInterface }) =>
-        handleDrop(args.type, {
+      drop: (args: { type: string; file: FolderItemInterface }) => {
+        if (args.file.id === folder.id) return;
+        return handleDrop(args.type, {
           ...args.file,
           folderId: folder.id,
-        }),
+        });
+      },
       collect: (monitor) => ({
         isOver: !!monitor.isOver(),
       }),
